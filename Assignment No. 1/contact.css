@@ -1,0 +1,86 @@
+h1{
+    color: #0d6486;
+    font-weight:bold ;
+    text-align: center;
+}
+h3{
+    color: black;
+}
+h3 span{
+    color: rgb(177, 20, 20);
+}
+label{
+    font-size: large;
+    font-weight: 400;
+    opacity: 0.8;
+}
+select{
+    width:250px;
+    height:40px;
+    padding:5px;
+    font-size:16px;
+}
+.contact-form{
+    width:400px;
+    margin:40px auto;
+    padding:25px;
+    background:#f8f8f8;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.contact-form label{
+    font-size:18px;
+    font-weight:bold;
+    color:#0d6486;
+    display:block;
+    margin-top:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.contact-form textarea{
+    height:120px;
+    resize:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#0d6486;
+    outline:none;
+}
+
+.contact-form button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#0d6486;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.contact-form button:hover{
+    background:#0a4f6b;
+}
+.select{
+    text-align: center;
+}
+.dropdown{
+    border: 2px solid black;
+}
+.label{
+    font-size: large;
+    line-height: 40px;
+}

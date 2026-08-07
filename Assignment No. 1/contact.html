@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <h1>Contact</h1>
+    <h3><span>Address:</span> Udoji Maratha Boarding Campus, Gangapur Road, Nashik-422013. Maharashtra</h3>
+    <h3><span>Phone Number:</span>0253-2571439/ 0253-2582891</h3>
+    <h3><span>E-mail:</span> principal@kbtcoe.org</h3>
+    <br>
+    <hr>
+    <br>
+    <div class="select">
+    <label for="con" class="label">Whom do you want to contact ?</label>
+    <br>
+    <select key="con" class="dropdown">
+        <option value=" " disabled selected >Select Person to Contact</option>
+        <option>Principal</option>
+        <option>Exam</option>
+        <option>Account</option>
+        <option>Office</option>
+    </select>
+    </div>
+    <br>
+    <form class="contact-form">
+    <label for="name">Your Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="email">Your E-mail</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+
+    <label for="sub">Subject</label><br>
+    <input type="text" id="sub" name="subject" placeholder="Enter subject">
+
+    <label for="message">Your Message</label><br>
+    <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    color:rgb(29, 128, 167); 
+}
+p{
+    line-height: 25px;
+    font-size: large;
+}
+.d1{
+    height: 30px;
+    width: 100%;
+    background-color:rgb(13, 95, 128); 
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
