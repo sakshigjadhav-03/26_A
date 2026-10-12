@@ -1,0 +1,533 @@
+.container {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 1px solid #e9e9ef;
+}
+
+.nav-inner {
+    width: min(1100px, 92%);
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #18181b;
+    font-size: 24px;
+    font-weight: 850;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.role {
+    background: #eeecff;
+    color: #5749d8;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.logout-button,
+.danger-button {
+    background: #18181b;
+    color: white;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 9px;
+}
+
+.hero {
+    margin: 35px 0 28px;
+    padding: 38px;
+    border-radius: 24px;
+    background: linear-gradient(120deg, #18181b, #302b5d);
+    color: white;
+}
+
+.section-label {
+    display: block;
+    color: #7567ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.hero .section-label {
+    color: #b5afff;
+}
+
+.hero h1 {
+    margin: 10px 0;
+    font-size: clamp(29px, 4vw, 43px);
+}
+
+.hero > p {
+    color: #d8d7e5;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.stats div {
+    min-width: 125px;
+    padding: 16px 22px;
+    background: #ffffff19;
+    border-radius: 14px;
+}
+
+.stats strong,
+.stats span {
+    display: block;
+}
+
+.stats strong {
+    font-size: 26px;
+}
+
+.stats span {
+    color: #d7d6e4;
+    font-size: 12px;
+}
+
+.create-box {
+    background: white;
+    padding: 30px;
+    border: 1px solid #e7e7ed;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.create-box h2,
+.section-heading h2 {
+    font-size: 25px;
+    margin: 7px 0 12px;
+}
+
+.muted {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.assignment-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.assignment-form input,
+.assignment-form select,
+.assignment-form textarea,
+.auth-card input,
+.submission-area input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dedee6;
+    border-radius: 10px;
+    background: #fff;
+    color: #18181b;
+    outline: none;
+}
+
+.assignment-form input:focus,
+.assignment-form select:focus,
+.assignment-form textarea:focus,
+.auth-card input:focus,
+.submission-area input:focus {
+    border-color: #7567ff;
+    box-shadow: 0 0 0 3px #7567ff19;
+}
+
+.assignment-form textarea {
+    grid-column: 1 / -1;
+    min-height: 90px;
+    resize: vertical;
+}
+
+.field-label {
+    display: grid;
+    gap: 6px;
+    color: #555;
+    font-size: 13px;
+}
+
+.assign-box {
+    grid-column: 1 / -1;
+    background: #f8f8fc;
+    border: 1px solid #eeeef5;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.assign-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0;
+}
+
+.assign-options button,
+.role-select button {
+    padding: 11px 15px;
+    border: 1px solid #dedee6;
+    border-radius: 10px;
+    background: white;
+}
+
+.assign-options button.selected,
+.role-select button.active {
+    color: #5146d6;
+    border-color: #7567ff;
+    background: #eeecff;
+}
+
+.student-picker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.student-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #e8e8ef;
+    border-radius: 10px;
+}
+
+.student-option input {
+    width: auto;
+}
+
+.student-option small {
+    display: block;
+    color: #888;
+    font-size: 12px;
+}
+
+.primary-button {
+    border: 0;
+    border-radius: 10px;
+    padding: 13px 20px;
+    background: #635bff;
+    color: white;
+    font-weight: 750;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background: #5046e5;
+}
+
+.primary-button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.assignment-form > .primary-button {
+    grid-column: 1 / -1;
+}
+
+.work-section {
+    padding-bottom: 60px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.section-heading > span {
+    color: #777;
+    font-size: 13px;
+}
+
+.task-list {
+    display: grid;
+    gap: 15px;
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 22px;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e6e6ed;
+    border-radius: 17px;
+}
+
+.task-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.priority {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #eee;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.priority.high {
+    background: #ffe8e8;
+    color: #bd3333;
+}
+
+.priority.medium {
+    background: #fff2d9;
+    color: #996300;
+}
+
+.priority.low {
+    background: #e3f7eb;
+    color: #187745;
+}
+
+.task-card h3 {
+    margin-top: 10px;
+    font-size: 21px;
+}
+
+.subject {
+    color: #635bff;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.task-content > p:not(.subject) {
+    color: #666;
+    margin-top: 8px;
+}
+
+.task-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 15px;
+    color: #777;
+    font-size: 13px;
+}
+
+.submission-area {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin-top: 22px;
+    padding: 16px;
+    background: #f8f8fc;
+    border-radius: 12px;
+}
+
+.action-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.action-row button {
+    padding: 10px 13px;
+    border: 0;
+    border-radius: 9px;
+    background: #635bff;
+    color: white;
+}
+
+.action-row .secondary-button {
+    background: #eeecff;
+    color: #5046d5;
+}
+
+.submission-area a,
+.student-result a {
+    color: #5549dc;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.status-submitted {
+    color: #16834a;
+}
+
+.status-pending {
+    color: #b57900;
+}
+
+.status-in-progress {
+    color: #584cdb;
+}
+
+.student-results {
+    margin-top: 22px;
+}
+
+.student-results > strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.student-result {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ededf2;
+    font-size: 13px;
+}
+
+.student-result small {
+    display: block;
+    color: #888;
+}
+
+.danger-button {
+    background: #fff0f0;
+    color: #c33;
+    cursor: pointer;
+}
+
+.empty {
+    padding: 45px 20px;
+    background: white;
+    border: 1px dashed #d8d8e3;
+    border-radius: 17px;
+    text-align: center;
+    color: #777;
+}
+
+.empty-icon {
+    font-size: 30px;
+    color: #635bff;
+    margin-bottom: 8px;
+}
+
+.empty h3 {
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: #f5f5f9;
+}
+
+.auth-card {
+    width: min(440px, 100%);
+    padding: 38px;
+    background: white;
+    border: 1px solid #e8e8ef;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px #1717170d;
+}
+
+.brand {
+    font-size: 27px;
+    font-weight: 850;
+    margin-bottom: 28px;
+}
+
+.auth-card h1 {
+    font-size: 34px;
+    margin: 9px 0;
+}
+
+.auth-card > p {
+    color: #777;
+    margin-bottom: 24px;
+}
+
+.auth-card form {
+    display: grid;
+    gap: 13px;
+    margin-top: 20px;
+}
+
+.role-select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.switch {
+    width: 100%;
+    border: 0;
+    background: none;
+    color: #5549dc;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.error {
+    color: #bd3030;
+    background: #fff0f0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.page-error {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 25px;
+    }
+
+    .create-box {
+        padding: 20px;
+    }
+
+    .assignment-form,
+    .student-picker {
+        grid-template-columns: 1fr;
+    }
+
+    .task-card {
+        flex-direction: column;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    .student-result {
+        align-items: flex-start;
+    }
+
+    .auth-card {
+        padding: 26px;
+    }
+}
